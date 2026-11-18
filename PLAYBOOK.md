@@ -13,7 +13,7 @@ Le propriétaire du plugin peut ouvrir https://chatgpt.com/plugins/plugins_6afdb
 
 ## 3. Claude Web / Desktop
 
-Compresser le dossier `skills/infographic-storytelling` (dossier racine contenant SKILL.md et references/). Dans Claude, activer les capacités de création/édition de fichiers si nécessaires, puis importer le ZIP via Customize > Skills si disponible. Activer le skill. Les PNG de référence doivent être ajoutés au dossier assets/ avant compression s'ils manquent.
+Compresser le dossier `skills/infographic-storytelling` (dossier racine contenant SKILL.md et references/). Dans Claude, activer les capacités de création/édition de fichiers si nécessaires, puis importer le ZIP via Customize > Skills si disponible. Activer le skill. Les deux PNG originaux sont inclus dans le dossier assets/ ; conserver ce dossier lors de la compression.
 
 ## 4. VS Code / Claude Code / Codex
 

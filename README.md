@@ -16,6 +16,7 @@
 
 | 🎨 COLOR | ✏️ MINIMAL |
 |---|---|
+| [<img src="skills/infographic-storytelling/assets/color.png" alt="Exemple COLOR : Le vrai trophée" width="420">](skills/infographic-storytelling/assets/color.png) | [<img src="skills/infographic-storytelling/assets/minimal.png" alt="Exemple MINIMAL : Le vrai trophée" width="420">](skills/infographic-storytelling/assets/minimal.png) |
 | Bande dessinée pédagogique en couleurs naturelles | Croquis au trait noir, quatre cercles colorés |
 | Palette fixe bleu, violet, vert, ocre | Minimum de distractions visuelles |
 | [Prompt maître COLOR](skills/infographic-storytelling/references/color.md) | [Prompt maître MINIMAL](skills/infographic-storytelling/references/minimal.md) |
@@ -58,11 +59,13 @@ install-windows.ps1
 docs/workflow.svg
 skills/infographic-storytelling/
   SKILL.md
+  assets/color.png
+  assets/minimal.png
   references/color.md
   references/minimal.md
 ```
 
-**Références visuelles :** les deux PNG originaux accompagnent le plugin privé. Si les PNG ne sont pas présents dans ce dépôt, joindre manuellement l'image correspondante à la génération.
+**Références visuelles :** les deux PNG originaux sont inclus dans le dépôt et dans le plugin privé. Leur intégrité a été vérifiée par comparaison des empreintes Git. Utiliser la référence correspondant au style choisi ; si le générateur ne reçoit pas automatiquement l'image, la joindre manuellement.
 
 ## Qualité pédagogique
 
