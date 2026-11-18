@@ -41,6 +41,7 @@ MINIMAL — Explain photosynthesis.
 | Environnement | Méthode |
 |---|---|
 | ChatGPT Web / Windows | Plugin privé pour son propriétaire ou adaptation du package |
+| Gemini Web | [Compétence Gemini — ZIP natif](gemini/README.md) |
 | Claude Web / Desktop | Importer le dossier skill compressé |
 | Claude Code / VS Code | Copier le skill dans `~/.claude/skills/` |
 | Codex / VS Code | Copier le skill dans `~/.agents/skills/` |

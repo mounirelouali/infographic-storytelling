@@ -39,3 +39,7 @@ COLOR : palette et 4 chapitres. MINIMAL : seules les pastilles sont colorées. V
 ## 7. Maintenance
 
 Modifier les prompts dans references/, garder SKILL.md cohérent et versionner les changements. Commit et push dans GitHub, puis reconstruire/réimporter les packages sur les clients concernés. Le dépôt public ne contient pas les secrets ni ne met automatiquement à jour les plugins cloud.
+
+## Gemini
+
+Voir [le guide Gemini](gemini/README.md). Générer le ZIP avec `python gemini/build.py` et importer dans Compétences. Les deux références sont incluses.
