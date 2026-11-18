@@ -1,0 +1,29 @@
+{
+  "interface": {
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Cr\u00e9e une infographie couleur \u00e0 partir de mon cours.",
+      "Cr\u00e9e une infographie minimaliste \u00e0 partir de mon cours."
+    ],
+    "developerName": "mounir el ouali",
+    "displayName": "Infographic Storytelling",
+    "longDescription": "Transforme un cours en une infographie narrative de quatre chapitres, en couleur ou en croquis minimaliste, avec une r\u00e9f\u00e9rence visuelle et un nombre de personnages configurable.",
+    "shortDescription": "BD p\u00e9dagogique en deux styles",
+    "capabilities": []
+  },
+  "name": "infographic-storytelling",
+  "version": "1.0.0",
+  "description": "Two locked educational storytelling infographic prompts with visual references, input parameters and cross-platform workflow.",
+  "author": {
+    "name": "mounir el ouali",
+    "email": "mounirelouali@gmail.com"
+  },
+  "keywords": [
+    "education",
+    "infographic",
+    "storytelling",
+    "english",
+    "visual learning"
+  ],
+  "skills": "./skills"
+}
