@@ -11,8 +11,8 @@ The reader should understand:
 2. Four related concept groups.
 3. How those concepts help the characters solve a problem.
 
-Audience: a 13-year-old beginner.
-Default language: French explanations and A2 English dialogue.
+Audience and level: infer from the request and source; default to a general audience.
+Language: use the requested output language, otherwise the source language; when mixed or absent, use the language of the request. Only use separate dialogue and explanation languages when appropriate to the supplied content or explicitly requested. Support any script and use natural text, including correct right-to-left shaping where needed.
 
 FIXED COMPOSITION
 
@@ -40,7 +40,7 @@ VISUAL IDENTITY — KEEP CONSTANT
 Warm, clean educational comic illustration.
 Simple expressive faces, rounded shapes, clear black outlines.
 Flat, restrained colors with white space around the drawings.
-Characters should feel approachable and suitable for teenagers.
+Characters should feel approachable and appropriate for the inferred audience.
 
 Background: white.
 Text and outlines: dark charcoal.
@@ -64,21 +64,18 @@ No photographic textures, glossy effects, dramatic lighting,
 
 CHARACTER SYSTEM — KEEP CONSTANT
 
-Use exactly CHARACTER_COUNT distinct people throughout the poster.
-This is the total cast, not the number required in every chapter.
+Use the automatically inferred CHARACTER_COUNT of distinct characters throughout the poster.
+Select the minimum useful cast based on distinct narrative roles: one for a solo demonstration, two for an interaction, three or more only when justified. A person, animal, object or system may be the focal protagonist as appropriate. This is the total cast, not the number required in every chapter.
 Do not introduce unnamed background people.
 
 Reuse supplied character descriptions when available.
-Otherwise establish the cast once:
-- One recognizable protagonist.
-- One helper or guide.
-- Additional characters only when needed by the story.
+Otherwise establish the cast once: one recognizable protagonist and only the additional roles actually needed by the story.
 
 Give each person a stable face, hairstyle, outfit, and silhouette.
 Keep these identical across chapters.
-The protagonist must appear in every chapter.
+The protagonist or focal subject must remain recognizable throughout all four chapters.
 
-If a reference cast is supplied, preserve its appearance.
+If the user explicitly requests a reference cast, preserve its appearance; otherwise use the reference for visual style only.
 Change poses, expressions, and actions to suit the new content.
 
 CONTENT HIERARCHY
@@ -113,7 +110,9 @@ Reuse a central object when it helps continuity.
 
 Every chapter must visibly change the situation.
 Every learning concept must help someone understand, choose, or act.
-The ending must resolve the opening problem.
+The ending must resolve the opening problem or complete the explanatory progression.
+
+For factual, abstract or procedural content, use a source-faithful example, explanation, process or chronology instead of forcing fictional conflict. Label illustrative scenarios when necessary; preserve facts and essential technical terminology.
 
 Choose a compelling narrative approach before rendering.
 Do not display brainstorming, alternative plots, or planning.
@@ -129,11 +128,11 @@ Each explanatory cue: maximum 10 words.
 Closing sentence: maximum 12 words.
 
 Use natural, complete dialogue.
-Characters speak to each other, not to an invisible classroom.
+Characters speak naturally to each other or, for a solo demonstration, use a brief thought or action cue.
 Place every bubble next to its speaker with an unmistakable tail.
 
-Keep French explanations short and concrete.
-For English learning, use A2 English in the bubbles.
+Keep explanations short and concrete in the inferred or requested output language.
+Use dialogue in that language unless the content or request calls for multilingual treatment. Adapt linguistic complexity to the audience and subject.
 Highlight target vocabulary where it is actually used.
 
 Do not repeat the same information in a bubble, caption, and legend.
@@ -142,7 +141,7 @@ Do not create a separate vocabulary wall.
 ACCURACY AND DENSITY CHECK
 
 Check that:
-- Every illustration demonstrates its associated words correctly.
+- Every illustration demonstrates its associated concepts correctly.
 - Spatial positions, time order, quantities, and causal links are accurate.
 - Context-dependent meanings are not presented as universal rules.
 - Story events do not introduce false facts or misleading examples.
@@ -161,12 +160,13 @@ Do not add a written analysis, script, or alternative version.
 
 INPUTS
 
-CHARACTER_COUNT: 3
-CHARACTERS: Reuse the reference cast; otherwise create a consistent cast.
-EXPLANATION_LANGUAGE: French
-DIALOGUE_LANGUAGE_AND_LEVEL: English, A2
+CHARACTER_COUNT: AUTO — infer the smallest useful cast.
+CHARACTERS: AUTO — infer roles and consistent appearance; honor explicit requests.
+AUDIENCE_AND_LEVEL: AUTO — infer from source and request.
+EXPLANATION_LANGUAGE: AUTO — requested output language, otherwise source language or request language.
+DIALOGUE_LANGUAGE_AND_LEVEL: AUTO — match explanation language unless multilingual content or request requires otherwise.
 REQUIRED_TERMS: Extract essential terms from the source unless specified.
 LEARNING_OBJECTIVE: Infer from the source unless specified.
 
 SOURCE_CONTENT:
-[PASTE THE CONTENT HERE]
+[INSERT THE USER CONTENT AUTOMATICALLY]

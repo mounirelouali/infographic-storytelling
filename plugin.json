@@ -1,32 +1,33 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "infographic-storytelling",
+  "version": "1.1.0",
+  "description": "Universal multilingual visual storytelling for any subject, with automatic context, cast and language selection and two fixed visual styles.",
   "author": {
-    "email": "mounirelouali@gmail.com",
-    "name": "mounir el ouali"
+    "name": "mounir el ouali",
+    "email": "mounirelouali@gmail.com"
   },
-  "description": "Two locked educational storytelling infographic prompts with visual references, input parameters and cross-platform workflow.",
+  "keywords": [
+    "infographic",
+    "storytelling",
+    "visual learning",
+    "multilingual",
+    "education",
+    "processes"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
+        "displayName": "Infographic Storytelling — COLOR / MINIMAL",
+        "shortDescription": "COLOR ou MINIMAL, tous sujets",
+        "longDescription": "Transforme n’importe quel contenu, dans n’importe quelle langue, en une histoire visuelle en quatre chapitres. Choisissez COLOR ou MINIMAL et transmettez le contenu : le reste est automatique.",
+        "developerName": "mounir el ouali",
         "category": "Productivity",
         "defaultPrompt": [
-          "Cr\u00e9e une infographie couleur \u00e0 partir de mon cours.",
-          "Cr\u00e9e une infographie minimaliste \u00e0 partir de mon cours."
-        ],
-        "developerName": "mounir el ouali",
-        "displayName": "Infographic Storytelling",
-        "longDescription": "Transforme un cours en une infographie narrative de quatre chapitres, en couleur ou en croquis minimaliste, avec une r\u00e9f\u00e9rence visuelle et un nombre de personnages configurable.",
-        "shortDescription": "BD p\u00e9dagogique en deux styles"
+          "COLOR — transforme le contenu suivant en infographie :",
+          "MINIMAL — transforme le contenu suivant en infographie :"
+        ]
       }
     }
-  },
-  "keywords": [
-    "education",
-    "infographic",
-    "storytelling",
-    "english",
-    "visual learning"
-  ],
-  "name": "infographic-storytelling",
-  "version": "1.0.0"
+  }
 }

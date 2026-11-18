@@ -10,8 +10,8 @@ with minimal cognitive load.
 The reader must follow one clear path:
 main idea → four concept groups → concrete examples → resolution.
 
-Audience: a 13-year-old beginner.
-Default language: French explanations and A2 English dialogue.
+Audience and level: infer from the request and source; default to a general audience.
+Language: use the requested output language, otherwise the source language; when mixed or absent, use the language of the request. Only use separate dialogue and explanation languages when appropriate to the supplied content or explicitly requested. Support any script and use natural text, including correct right-to-left shaping where needed.
 
 FIXED COMPOSITION
 
@@ -71,21 +71,18 @@ Use no detailed rooms, scenery, decorative props, or background people.
 
 CHARACTER SYSTEM — KEEP CONSTANT
 
-Use exactly CHARACTER_COUNT distinct people throughout the poster.
-This is the total cast, not the number required in every chapter.
+Use the automatically inferred CHARACTER_COUNT of distinct characters throughout the poster.
+Select the minimum useful cast based on distinct narrative roles: one for a solo demonstration, two for an interaction, three or more only when justified. A person, animal, object or system may be the focal protagonist as appropriate. This is the total cast, not the number required in every chapter.
 
 Reuse supplied character descriptions when available.
-Otherwise establish:
-- One recurring protagonist.
-- One helper or guide.
-- Additional characters only when the story needs them.
+Otherwise establish one recurring protagonist and only the additional roles actually needed by the story.
 
 Keep each person's face, hairstyle, outfit outline, and proportions
 identical across chapters.
 Distinguish people through silhouette, not color.
-The protagonist must appear in every chapter.
+The protagonist or focal subject must remain recognizable throughout all four chapters.
 
-If a reference cast is supplied, preserve its recognizable features.
+If the user explicitly requests a reference cast, preserve its recognizable features; otherwise use the reference for visual style only.
 Change only expressions, gestures, and actions.
 
 CONTENT HIERARCHY
@@ -127,7 +124,9 @@ Do not place a decorative story beside a separate lesson.
 
 Use one dominant action per chapter.
 Keep the emotional stakes relatable and easy to understand.
-End with a short, memorable consequence that resolves the opening.
+End with a short, memorable consequence that resolves the opening or completes the explanatory progression.
+
+For factual, abstract or procedural content, use a source-faithful example, explanation, process or chronology instead of forcing fictional conflict. Label illustrative scenarios when necessary; preserve facts and essential technical terminology.
 
 Choose the narrative approach before rendering.
 Do not show planning or alternative plots.
@@ -143,11 +142,11 @@ Each explanatory cue: maximum 10 words.
 Closing sentence: maximum 12 words.
 
 Use two or three speech bubbles per chapter.
-Give each bubble an unmistakable tail pointing to its speaker.
+Give each bubble an unmistakable tail pointing to its speaker; use a brief thought or action cue for a solo demonstration.
 Keep dialogue natural, brief, and connected to the visible action.
 
-Use simple French explanations.
-For English learning, use A2 English dialogue.
+Use clear explanations in the inferred or requested output language.
+Use dialogue in that language unless the content or request calls for multilingual treatment. Adapt linguistic complexity to the audience and subject.
 Bold target vocabulary within the example itself.
 
 Never repeat an explanation in multiple places.
@@ -181,12 +180,13 @@ Do not add commentary, a written story, or alternative versions.
 
 INPUTS
 
-CHARACTER_COUNT: 3
-CHARACTERS: Reuse the reference cast; otherwise create a consistent cast.
-EXPLANATION_LANGUAGE: French
-DIALOGUE_LANGUAGE_AND_LEVEL: English, A2
+CHARACTER_COUNT: AUTO — infer the smallest useful cast.
+CHARACTERS: AUTO — infer roles and consistent appearance; honor explicit requests.
+AUDIENCE_AND_LEVEL: AUTO — infer from source and request.
+EXPLANATION_LANGUAGE: AUTO — requested output language, otherwise source language or request language.
+DIALOGUE_LANGUAGE_AND_LEVEL: AUTO — match explanation language unless multilingual content or request requires otherwise.
 REQUIRED_TERMS: Extract essential terms from the source unless specified.
 LEARNING_OBJECTIVE: Infer from the source unless specified.
 
 SOURCE_CONTENT:
-[PASTE THE CONTENT HERE]
+[INSERT THE USER CONTENT AUTOMATICALLY]

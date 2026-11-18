@@ -1,4 +1,4 @@
-# Playbook — Infographic Storytelling v1.0.0
+# Playbook — Infographic Storytelling v1.1.0 — Universal Edition
 
 ## 1. Récupérer les sources
 
@@ -9,7 +9,7 @@ cd infographic-storytelling
 
 ## 2. ChatGPT Web / Windows
 
-Le propriétaire du plugin peut ouvrir https://chatgpt.com/plugins/plugins_6afdb349f2d48191bc61f65e9da016e1. Activer le plugin dans le compte compatible, sélectionner COLOR ou MINIMAL et transmettre le contenu. Si le générateur ne reçoit pas la référence automatiquement, joindre le PNG correspondant. La disponibilité dépend du client.
+Le propriétaire du plugin peut ouvrir https://chatgpt.com/plugins/plugins_6afdb349f2d48191bc61f65e9da016e1. Activer le plugin dans le compte compatible, indiquer COLOR ou MINIMAL et transmettre le contenu sans autre paramètre. Si le générateur ne reçoit pas la référence automatiquement, joindre le PNG correspondant. La disponibilité dépend du client.
 
 ## 3. Claude Web / Desktop
 
@@ -24,13 +24,13 @@ Depuis PowerShell dans la racine du dépôt :
 .\install-windows.ps1 -Agent Codex
 ```
 
-Relancer l'agent. Claude Code : `/infographic-storytelling MINIMAL, 3 personnages, voici le cours : ...`. Codex : sélectionner le skill ou le demander par son nom. Pour un environnement distant, installer dans son système de fichiers, pas uniquement sur Windows.
+Relancer l'agent. Claude Code : `/infographic-storytelling MINIMAL — Explique le fonctionnement d'une API REST.`. Codex : sélectionner le skill ou le demander par son nom. Pour un environnement distant, installer dans son système de fichiers, pas uniquement sur Windows.
 
-## 5. Paramètres
+## 5. Utilisation universelle
 
-STYLE : COLOR ou MINIMAL. CHARACTER_COUNT : 3 par défaut. CHARACTERS : description facultative. EXPLANATION_LANGUAGE : French. DIALOGUE_LANGUAGE_AND_LEVEL : English, A2. REQUIRED_TERMS et LEARNING_OBJECTIVE : inférés sauf indication. SOURCE_CONTENT : leçon obligatoire.
+Une demande naturelle suffit : `COLOR — Explique le cycle de l'eau` ou `MINIMAL — Résume le PDF joint`. Sans style, COLOR est automatique. Aucun paramètre obligatoire : le skill déduit les personnages utiles, la langue de sortie, le public, le niveau, l'objectif et les concepts. Toute préférence explicite prime. Par défaut, l'affiche est dans la langue du contenu, ou de la demande lorsque le contenu est absent ou mixte. Ne jamais imposer un contexte d'apprentissage de l'anglais.
 
-Sans outil d'image, le skill fournit un prompt complet et identifie la référence ; utiliser ensuite ChatGPT Images ou un générateur compatible. Ne pas prétendre qu'une image a été générée si ce n'est pas le cas.
+Sans outil d'image, le skill fournit un prompt complet et identifie la référence ; utiliser ensuite un générateur compatible. Ne pas prétendre qu'une image a été générée si ce n'est pas le cas.
 
 ## 6. Tests
 

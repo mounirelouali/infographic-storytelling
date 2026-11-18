@@ -1,10 +1,10 @@
 <div align="center">
 
-# 🎨 Infographic Storytelling
+# 🎨 Infographic Storytelling — COLOR / MINIMAL
 
-**Transformez un cours en une histoire visuelle mémorable.**
+**Transformez n'importe quel sujet, dans n'importe quelle langue, en une histoire visuelle mémorable.**
 
-`v1.0.0` · `Agent Skill` · `COLOR / MINIMAL` · `4 chapitres`
+`v1.1.0` · `Universal Edition` · `Agent Skill` · `COLOR / MINIMAL` · `4 chapitres`
 
 [Guide d'installation](PLAYBOOK.md) · [Skill](skills/infographic-storytelling/SKILL.md) · [ChatGPT](https://chatgpt.com/plugins/plugins_6afdb349f2d48191bc61f65e9da016e1)
 
@@ -21,21 +21,20 @@
 | Palette fixe bleu, violet, vert, ocre | Minimum de distractions visuelles |
 | [Prompt maître COLOR](skills/infographic-storytelling/references/color.md) | [Prompt maître MINIMAL](skills/infographic-storytelling/references/minimal.md) |
 
-Chaque mode conserve une structure verticale 4:5, quatre chapitres, un protagoniste récurrent, des dialogues courts et une résolution narrative. Les termes requis doivent rester présents ; si la leçon est trop dense, le skill propose une série plutôt qu'une affiche illisible.
+Chaque mode conserve une structure verticale 4:5, quatre chapitres, un protagoniste ou sujet central récurrent, des dialogues courts et une résolution narrative. Les termes requis doivent rester présents ; si la leçon est trop dense, le skill propose une série plutôt qu'une affiche illisible.
 
 ## ⚡ Démarrage rapide
 
-Dans ChatGPT, Claude ou votre agent de code compatible, sélectionnez le skill et utilisez une demande comme :
+Dans ChatGPT, Claude ou votre agent de code compatible, sélectionnez le skill et écrivez simplement votre demande en langage naturel :
 
 ```text
-Infographic Storytelling — COLOR
-CHARACTER_COUNT: 3
-EXPLANATION_LANGUAGE: French
-DIALOGUE_LANGUAGE_AND_LEVEL: English, A2
-SOURCE_CONTENT: Explain before, after, behind, in front of, under, on.
+COLOR — Explique le fonctionnement d'une API REST.
+MINIMAL — Résume ce document.
+COLOR — اشرح كيفية عمل القلب
+MINIMAL — Explain photosynthesis.
 ```
 
-Remplacez COLOR par MINIMAL pour un rendu au trait. Vous pouvez également préciser les personnages, les termes obligatoires et l'objectif pédagogique.
+**Aucun formulaire, aucun paramètre obligatoire.** Sélectionnez COLOR ou MINIMAL et fournissez votre contenu, sujet ou fichier. Sans style précisé, COLOR est utilisé automatiquement. Le nombre de personnages, les langues, le public, le niveau, les concepts essentiels et le scénario sont déduits du contexte. La langue demandée prime ; sinon celle du contenu est utilisée, ou celle de la demande en cas de contenu mixte ou absent. Tous les sujets sont acceptés, y compris les procédures, les sciences, le développement informatique, l'histoire et les langues. Les préférences explicites restent prioritaires.
 
 ## Installation
 
